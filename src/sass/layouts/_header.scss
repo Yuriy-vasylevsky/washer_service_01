@@ -1,9 +1,100 @@
+@import '../utils/variables';
+
 .header {
-  padding-top: 30px;
+  height: 134px;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  // padding-top: 42px;
+  // padding-bottom: 42px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162.52%;
+  text-align: center;
+  color: var(--main-text-color);
+  transition: color 300ms;
+}
+
+.logo:hover {
+  color: var(--main-accente-color);
 }
 
 .header__container {
   display: flex;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  @media screen and (max-width: 1122px) {
+    display: none;
+  }
 }
 
 // .container{}
+
+// .header__menu {
+// }
+
+// .header__item {
+// }
+
+.header__item:not(:last-child) {
+  padding-right: 41px;
+}
+
+.header__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162.52%;
+  text-align: center;
+  color: var(--main-text-color);
+  transition: color 300ms;
+}
+
+.header__link:hover {
+  color: var(--main-accente-color);
+}
+
+.item {
+}
+
+.header__button {
+}
+
+.button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--main-text-color);
+  border: 2px solid var(--main-text-color);
+  padding: 14px 35px 14px 35px;
+  transition: all 300ms;
+}
+
+.button:hover {
+  border: 2px solid var(--main-accente-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-text-color);
+  transition: color 300ms;
+}
+
+.icon:hover {
+  fill: var(--main-accente-color);
+}
+
+.icon-menu {
+  @media screen and (min-width: 1122px) {
+    display: none;
+  }
+}
