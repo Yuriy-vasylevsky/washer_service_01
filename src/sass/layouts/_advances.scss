@@ -1,0 +1,33 @@
+.advances {
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+
+.advances__container {
+}
+.advances__title {
+}
+.title {
+}
+.advances__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+}
+.cards__body {
+  max-width: 330px;
+  background: #1d1d1d;
+  border: 1.4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+}
+.card__img {
+  width: 100px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card__title {
+}
+.card__text {
+}

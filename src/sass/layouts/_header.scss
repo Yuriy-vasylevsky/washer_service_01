@@ -28,6 +28,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  width: 1123px;
 }
 
 .header__list {
@@ -113,12 +114,12 @@
 }
 
 .icon-menu {
-  @media screen and (min-width: 1122px) {
-    display: none;
-  }
 }
 
 .icon-box {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 1122px) {
+    display: none;
+  }
 }
