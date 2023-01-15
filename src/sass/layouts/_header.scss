@@ -83,18 +83,28 @@
   border: 2px solid var(--main-text-color);
   padding: 14px 35px 14px 35px;
   transition: all 300ms;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .button:hover {
   border: 2px solid var(--main-accente-color);
-  transform: scale(2);
-  border-radius: 50%;
+  transform: scale(1.2);
+  // border-radius: 50%;
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--main-accente-color);
+  width: 30px;
+  height: 30px;
+  // fill: var(--main-accente-color);
+  fill: #fff;
   transition: fill 300ms linear;
 }
 
@@ -106,4 +116,9 @@
   @media screen and (min-width: 1122px) {
     display: none;
   }
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
 }

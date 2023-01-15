@@ -1,5 +1,6 @@
 .hero {
   background: #111111;
+  // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   padding-top: 180px;
   padding-bottom: 180px;
 }
@@ -38,6 +39,7 @@
 .hero__images {
   position: relative;
   max-width: 467px;
+  z-index: 111;
 }
 
 .hero__images img {
