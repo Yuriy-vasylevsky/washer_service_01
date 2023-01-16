@@ -1,0 +1,13 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--grid-margin));
+  margin-left: calc(-1 * var(--grid-margin));
+}
+
+.grid-item {
+  margin-top: var(--grid-margin);
+  margin-left: var(--grid-margin);
+  /* flex-basis: calc((100% - var(--grid-item) *30px) / var(--grid-item)); */
+  flex-basis: calc(100% / var(--grid-item) - var(--grid-margin));
+}
