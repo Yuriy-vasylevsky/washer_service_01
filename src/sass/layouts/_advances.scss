@@ -1,11 +1,11 @@
 .advances {
-  padding-bottom: 150px;
-  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-top: 100px;
   background-image: url(../images/water/2.png);
   background-repeat: no-repeat;
   background-size: auto;
-  background-position-x: -140px;
-  background-position-y: -118px;
+  background-position-x: -144px;
+  background-position-y: -120px;
 
   @media screen and (max-width: 1122px) {
     padding-top: 100px;
@@ -28,12 +28,9 @@
   }
 }
 
-.advances__container {
-}
-
 .advances__title.title {
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 
   @media screen and (max-width: 1122px) and (min-width: 480px) {
     font-size: 52px;
@@ -44,44 +41,74 @@
   }
 }
 
-.advances__cards {
+.advances__chief {
+  background: var(--second-bg-color);
+  border: 1.4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 34px 24px 34px 24px;
+  margin-bottom: 30px;
+}
+
+.advances__chief:hover {
+  background: var(--accente-bg-color);
+}
+
+.chief__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.hief__title-blue {
+  color: var(--main-accente-color);
+}
+
+.chief__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.52%;
+  color: var(--main-text-color);
+  text-align: center;
+  opacity: 0.3;
+}
+
+.advances__list {
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
 }
 
 .cards__body {
-  // max-width: 330px;
   background: #1d1d1d;
   border: 1.4px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   padding: 28px 24px 28px 24px;
 }
 
+.cards__body:hover {
+  background: var(--accente-bg-color);
+}
+
 .card__img {
   width: 100px;
   height: 100px;
+
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 28px;
 }
 
 .card__title {
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
   margin-bottom: 24px;
-  color: var(--main-text-color);
 }
 
 .card__text {
   font-weight: 500;
-  font-size: 14px;
   line-height: 162.52%;
-
-  color: var(--main-text-color);
-
   opacity: 0.3;
 }

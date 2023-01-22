@@ -1,0 +1,63 @@
+.specialization {
+  // background-image: url(../images/water/8.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position-x: 0px;
+  // background-position-y: 60px;
+
+  padding-bottom: 100px;
+  &__container {
+  }
+
+  &__title {
+    max-width: 800px;
+    font-size: 56px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 480px) {
+      font-size: 42px;
+    }
+
+    @media screen and (min-width: 1123px) {
+      font-size: 66px;
+    }
+  }
+
+  &__list {
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 480px) {
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+  }
+}
+
+.specialization .grid-item {
+  @media screen and (min-width: 480px) {
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 3;
+  }
+
+  @media screen and (min-width: 1123px) {
+    --grid-item: 4;
+    --grid-margin: 50px;
+  }
+}

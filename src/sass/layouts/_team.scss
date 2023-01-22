@@ -1,6 +1,11 @@
 .team {
-  padding-bottom: 150px;
-  padding-top: 150px;
+  padding-bottom: 100px;
+
+  background-image: url(../images/water/6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 0px;
+  background-position-y: 60px;
 }
 
 .team .grid-item {
@@ -16,7 +21,7 @@
   text-align: center;
 
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 
   @media screen and (max-width: 1122px) and (min-width: 480px) {
     font-size: 52px;
@@ -31,28 +36,30 @@
   display: flex;
   border-radius: 14px;
   padding: 10px 18px 10px 18px;
+
+  background: var(--second-bg-color);
+  border: 1.4px solid rgba(255, 255, 255, 0.1);
 }
 
 .team__body:hover {
-  background-color: var(--main-accente-color);
-  color: #373737;
+  background: var(--accente-bg-color);
+}
+
+.body__img {
+  display: flex;
+  align-items: center;
 }
 
 .body__img img {
   width: 100px;
   margin-right: 22px;
-}
-
-.body__content {
+  border-radius: 50%;
 }
 
 .body__title {
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
-  color: var(--main-text-color);
   padding-bottom: 6px;
 }
 
@@ -60,6 +67,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
-  color: var(--main-text-color);
   opacity: 0.3;
 }

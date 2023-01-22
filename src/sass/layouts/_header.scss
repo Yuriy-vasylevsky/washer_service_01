@@ -1,34 +1,24 @@
-@import '../utils/variables';
-
 .header {
   height: 134px;
-  background-color: #111111;
+  background: var(--second-accente-color);
   display: flex;
   align-items: center;
-  // padding-top: 42px;
-  // padding-bottom: 42px;
 }
 
 .logo {
-  // font-weight: 600;
-  // font-size: 16px;
-  // line-height: 162.52%;
-  // text-align: center;
-  // color: var(--main-text-color);
-  transition: all 300ms linear;
+  display: block;
   width: 150px;
-  height: 80px;
+  transition: all 300ms linear;
 }
 
 .logo:hover {
-  color: var(--main-accente-color);
   transform: scale(1.2);
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
-  width: 1123px;
+  width: 100%;
 }
 
 .header__list {
@@ -38,21 +28,42 @@
   }
 }
 
-// .container{}
-
 .header__menu {
   display: flex;
   align-items: center;
 }
-
-// .header__item {
-// }
 
 .header__item:not(:last-child) {
   padding-right: 41px;
 }
 
 .header__link {
+  position: relative;
+  z-index: 100;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162.52%;
+  text-align: center;
+  transition: color 300ms;
+}
+
+.header__link:hover {
+  color: var(--main-accente-color);
+}
+
+.contact {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.contact__link {
   font-weight: 600;
   font-size: 16px;
   line-height: 162.52%;
@@ -61,11 +72,12 @@
   transition: color 300ms;
 }
 
-.header__link:hover {
+.contact__link-blue {
   color: var(--main-accente-color);
 }
 
-.item {
+.contact__link:hover {
+  color: var(--main-accente-color);
 }
 
 .header__button {
@@ -74,13 +86,12 @@
 }
 
 .button {
-  font-family: 'Inter';
-  font-style: normal;
+  position: relative;
+  z-index: 100;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 119%;
   text-align: center;
-  color: var(--main-text-color);
   border: 2px solid var(--main-text-color);
   padding: 14px 35px 14px 35px;
   transition: all 300ms;
@@ -90,7 +101,7 @@
     padding: 10px 20px 10px 20px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
@@ -98,13 +109,11 @@
 .button:hover {
   border: 2px solid var(--main-accente-color);
   transform: scale(1.2);
-  // border-radius: 50%;
 }
 
 .icon {
   width: 30px;
   height: 30px;
-  // fill: var(--main-accente-color);
   fill: #fff;
   transition: fill 300ms linear;
 }
@@ -113,12 +122,10 @@
   fill: var(--main-accente-color);
 }
 
-.icon-menu {
-}
-
 .icon-box {
   display: flex;
   align-items: center;
+
   @media screen and (min-width: 1122px) {
     display: none;
   }

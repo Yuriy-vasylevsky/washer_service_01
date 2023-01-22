@@ -7,31 +7,42 @@
   </head>
 
   <body>
+    <!-- header -->
     <header class="header">
       <div class="header__container container">
         <a href="./" class="logo link">
-          <!-- <svg class="icon">
-            <use href="./images/symbol-defs.svg#wrench"></use>
-          </svg>
-          LOGO -->
           <img src="./images/1.png" class="logo-img" alt="логотип" />
         </a>
 
         <nav class="header__menu menu">
           <ul class="header__list list">
             <li class="header__item item">
-              <a href="" class="header__link link">Домашня сторінка</a>
-            </li>
-
-            <li class="header__item item">
-              <a href="" class="header__link link">Контакти</a>
+              <a href="" class="header__link link">Головна</a>
             </li>
 
             <li class="header__item item">
               <a href="" class="header__link link">Про нас</a>
             </li>
+
+            <li class="header__item item">
+              <a href="" class="header__link link">Контакти</a>
+            </li>
           </ul>
         </nav>
+
+        <ul class="contact list">
+          <li class="contact__item">
+            <a href="tel:0987359299" class="contact__link link">
+              <span class="contact__link-blue">(098)</span> 7359299
+            </a>
+          </li>
+
+          <li class="contact__item">
+            <a href="tel:0987359299" class="contact__link link">
+              <span class="contact__link-blue">(098)</span> 7359299
+            </a>
+          </li>
+        </ul>
 
         <div class="header__button">
           <a href="" class="button link">Залишити заявку</a>
@@ -39,13 +50,15 @@
 
         <div class="icon-box">
           <svg class="icon icon-menu">
-            <use href="./images/symbol-defs.svg#menu"></use>
+            <use href="./images/sprite.svg#menu"></use>
           </svg>
         </div>
       </div>
     </header>
 
+    <!-- main -->
     <main class="main">
+      <!-- hero -->
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__content">
@@ -56,95 +69,295 @@
           <div class="hero__images">
             <img src="./images/hero/pngwing.com.png" alt="" />
           </div>
-
-          <div class="fon">
-            <img src="./images/water/3.png" alt="" />
-          </div>
         </div>
       </section>
 
+      <!-- advances -->
       <section class="advances">
         <div class="container advances__container">
           <h2 class="advances__title title">Наші переваги. Спойлер - їх нема</h2>
 
-          <div class="advances__cards card grid">
-            <div class="cards__body grid-item">
-              <img src="./images/service-2.png" class="card__img" alt="" />
-              <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis et illum placeat
-                voluptate hic, aspernatur illo nesciunt animi fuga iure repudiandae sit delectus
-                quasi laborum itaque explicabo officia pariatur eos!
-              </p>
-            </div>
-
-            <div class="cards__body grid-item">
-              <img src="./images/service-2.png" class="card__img" alt="" />
-              <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis et illum placeat
-                voluptate hic, aspernatur illo nesciunt animi fuga iure repudiandae sit delectus
-                quasi laborum itaque explicabo officia pariatur eos!
-              </p>
-            </div>
-
-            <div class="cards__body grid-item">
-              <img src="./images/service-2.png" class="card__img" alt="" />
-              <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis et illum placeat
-                voluptate hic, aspernatur illo nesciunt animi fuga iure repudiandae sit delectus
-                quasi laborum itaque explicabo officia pariatur eos!
-              </p>
-            </div>
+          <div class="advances__chief chief">
+            <h3 class="chief__title">
+              Виклик майстра та діагностика - <span class="hief__title-blue">Безкоштовно</span>
+            </h3>
+            <p class="chief__text">При умові подальшого ремонту пральної машинки</p>
           </div>
+
+          <ul class="advances__list card grid list">
+            <li class="cards__body grid-item">
+              <img src="./images/1.png" class="card__img" alt="" />
+              <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis et illum placeat
+                voluptate hic, aspernatur illo nesciunt animi fuga iure repudiandae sit delectus
+                quasi laborum itaque explicabo officia pariatur eos!
+              </p>
+            </li>
+
+            <li class="cards__body grid-item">
+              <img src="./images/1.png" class="card__img" alt="" />
+              <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis et illum placeat
+                voluptate hic, aspernatur illo nesciunt animi fuga iure repudiandae sit delectus
+                quasi laborum itaque explicabo officia pariatur eos!
+              </p>
+            </li>
+
+            <li class="cards__body grid-item">
+              <img src="./images/1.png" class="card__img" alt="" />
+              <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis et illum placeat
+                voluptate hic, aspernatur illo nesciunt animi fuga iure repudiandae sit delectus
+                quasi laborum itaque explicabo officia pariatur eos!
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
+      <!-- team -->
       <section class="team">
         <div class="container team__container">
-           <h2 class="team__title title">Наша команда</h2>
+          <h2 class="team__title title">Наша команда</h2>
 
- <div class="team__cards grid" >
-         <div class="team__body  grid-item">
-          <div class="body__img">
-            <img src="./images/hero/pngwing.com.png" alt="" />
-          </div>
-          <div class="body__content">
-            <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
-            <p class="body__text">
-              Lorem ipsum dolor sit amet,
-            </p>
+          <div class="team__cards grid">
+            <div class="team__body grid-item">
+              <div class="body__img">
+                <img src="./images/1.png" alt="" />
+              </div>
+
+              <div class="body__content">
+                <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
+
+                <p class="body__text">Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
+
+            <div class="team__body grid-item">
+              <div class="body__img">
+                <img src="./images/1.png" alt="" />
+              </div>
+
+              <div class="body__content">
+                <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
+
+                <p class="body__text">Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
+
+            <div class="team__body grid-item">
+              <div class="body__img">
+                <img src="./images/1.png" alt="" />
+              </div>
+
+              <div class="body__content">
+                <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
+
+                <p class="body__text">Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
+
+            <div class="team__body grid-item">
+              <div class="body__img">
+                <img src="./images/1.png" alt="" />
+              </div>
+
+              <div class="body__content">
+                <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
+
+                <p class="body__text">Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
+
+            <div class="team__body grid-item">
+              <div class="body__img">
+                <img src="./images/1.png" alt="" />
+              </div>
+
+              <div class="body__content">
+                <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
+
+                <p class="body__text">Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
+
+            <div class="team__body grid-item">
+              <div class="body__img">
+                <img src="./images/1.png" alt="" />
+              </div>
+
+              <div class="body__content">
+                <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
+
+                <p class="body__text">Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="team__body grid-item">
-          <div class="body__img">
-            <img src="./images/hero/pngwing.com.png" alt="" />
-          </div>
-          <div class="body__content">
-            <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
-            <p class="body__text">
-              Lorem ipsum dolor sit amet, 
-            </p>
-          </div>
-        </div>
-
-        <div class="team__body grid-item">
-          <div class="body__img">
-            <img src="./images/hero/pngwing.com.png" alt="" />
-          </div>
-          <div class="body__content">
-            <h3 class="body__title">Lorem ipsum dolor sit amet.</h3>
-            <p class="body__text">
-              Lorem ipsum dolor sit amet,
-          </div>
-        </div>
- </div>
       </section>
+
+      <section class="specialization">
+        <div class="container specialization__container">
+          <h2 class="title specialization__title">
+            Ми ремонтуємо усі моделі та марки пральних машин
+          </h2>
+
+          <ul class="specialization__list grid list">
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/1.png" class="specialization__img" alt="" />
+            </li>
+
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/2.png" class="specialization__img" alt="" />
+            </li>
+
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/3.png" class="specialization__img" alt="" />
+            </li>
+
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/4.png" class="specialization__img" alt="" />
+            </li>
+
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/5.png" class="specialization__img" alt="" />
+            </li>
+
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/6.png" class="specialization__img" alt="" />
+            </li>
+
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/7.png" class="specialization__img" alt="" />
+            </li>
+
+            <li class="specialization__item grid-item">
+              <img src="./images/specialization/8.png" class="specialization__img" alt="" />
+            </li>
+          </ul>
         </div>
-       
+      </section>
+
+      <section class="faq">
+        <div class="container faq__container">
+          <h2 class="title faq__title">Найбільш часті запитання</h2>
+
+          <div class="flex">
+            <div class="faq__img">
+              <img src="./images/faq/1.png" class="" alt="Знак питання" />
+            </div>
+
+            <div class="faq__content">
+              <ul class="faq__list list">
+                <li class="faq__item">
+                  <div class="faq__box-title">
+                    <h3 class="faq__sub-title">Питання</h3>
+
+                    <svg class="icon faq__icon">
+                      <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+                  </div>
+
+                  <p class="faq__ansver">Відповідь</p>
+                </li>
+
+                <li class="faq__item">
+                  <div class="faq__box-title">
+                    <h3 class="faq__sub-title">Питання</h3>
+
+                    <svg class="icon faq__icon">
+                      <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+                  </div>
+
+                  <p class="faq__ansver">Відповідь</p>
+                </li>
+
+                <li class="faq__item">
+                  <div class="faq__box-title">
+                    <h3 class="faq__sub-title">Питання</h3>
+
+                    <svg class="icon faq__icon">
+                      <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+                  </div>
+
+                  <p class="faq__ansver">Відповідь</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="./" class="logo link">
+          <img src="./images/1.png" class="logo-img" alt="логотип" />
+        </a>
+
+        <nav class="footer__menu menu">
+          <!-- <h3 class="title footer__title">Навігація</h3> -->
+
+          <ul class="footer__list list">
+            <li class="footer__item item">
+              <a href="" class="footer__link link">Головна</a>
+            </li>
+
+            <li class="footer__item item">
+              <a href="" class="footer__link link">Про нас</a>
+            </li>
+
+            <li class="footer__item item">
+              <a href="" class="footer__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__box">
+          <ul class="footer__contact contact list">
+            <!-- <h3 class="title footer__title">Контакти</h3> -->
+            <li class="contact__item footer__contact">
+              <a href="tel:0987359299" class="contact__link link">
+                <span class="contact__link-blue">(098)</span> 7359299
+              </a>
+            </li>
+
+            <li class="contact__item">
+              <a href="tel:0987359299" class="contact__link link">
+                <span class="contact__link-blue">(098)</span> 7359299
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-social-list">
+            <h3 class="footer__title title">Ми в соцмережах</h3>
+
+            <ul class="social-list list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>
