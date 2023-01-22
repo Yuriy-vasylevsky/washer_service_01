@@ -8,13 +8,30 @@
     padding-bottom: 50px;
   }
 
+  &__logo {
+    width: 200px;
+
+    @media screen and (max-width: 1122px) {
+      width: 150px;
+    }
+  }
+
   &__title {
     font-size: 26px;
     margin-bottom: 15px;
+    text-align: center;
 
     @media screen and (max-width: 480px) {
       padding-top: 10px;
       text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 1122px) and (min-width: 768px) {
+      font-size: 16px;
     }
   }
 
@@ -36,17 +53,29 @@
 
   &__contact {
     flex-direction: row;
+    font-size: 14px;
+    justify-content: center;
 
     @media screen and (max-width: 480px) {
-      text-align: center;
-      display: block;
+      display: flex;
       margin-top: 15px;
+      margin: 0;
+      justify-content: center;
     }
+
+    // @media screen and (max-width: 768px) {
+    //   flex-direction: column;
+    //   justify-content: center;
+    // }
   }
 
-  &__contact:not(:last-child) {
-    margin-right: 15px;
-  }
+  // &__contact:not(:last-child) {
+  //   margin-right: 15px;
+  // }
+
+  // &__contact:not(:last-child) {
+  //   margin-right: 15px;
+  // }
 
   &__list {
     @media screen and (max-width: 768px) {
@@ -61,6 +90,13 @@
 
   &__link {
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link svg {
+    margin-right: 10px;
   }
 
   &__link:hover {
@@ -83,17 +119,22 @@
   }
 
   &__adres {
-    padding-bottom: 15px;
+    padding-bottom: 24px;
   }
 }
 
 .contact {
   &__item:not(:last-child) {
     padding-bottom: 10px;
+    padding-right: 15px;
   }
 
   &__link {
     font-size: 20px;
+
+    @media screen and (max-width: 1122px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -102,11 +143,26 @@
 }
 .social-item {
   margin-right: 20px;
+  text-align: center;
+  @media screen and (max-width: 1122px) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
 }
+
 .social-list {
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 1122px) {
+    flex-direction: column;
+  }
 }
+
 .social-icon {
   width: 40px;
   height: 40px;
@@ -120,4 +176,9 @@
 .box-footer {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: start;
+}
+
+.footer-social-list {
+  margin-right: 15px;
 }
