@@ -35,11 +35,17 @@
   }
 
   &__contact {
+    flex-direction: row;
+
     @media screen and (max-width: 480px) {
       text-align: center;
       display: block;
       margin-top: 15px;
     }
+  }
+
+  &__contact:not(:last-child) {
+    margin-right: 15px;
   }
 
   &__list {
@@ -65,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     flex-basis: calc(60% - 50px);
+    flex-direction: row-reverse;
 
     @media screen and (max-width: 768px) {
       width: 100%;
@@ -74,20 +81,20 @@
       flex-direction: column-reverse;
     }
   }
+
+  &__adres {
+    padding-bottom: 15px;
+  }
 }
 
 .contact {
-  &__item {
+  &__item:not(:last-child) {
     padding-bottom: 10px;
   }
 
   &__link {
     font-size: 20px;
   }
-
-  //   @media screen and (max-width: 768px) {
-  //     display: flex;
-  //   }
 }
 
 .social-list {
@@ -108,4 +115,9 @@
 
 .social-icon:hover {
   fill: var(--main-accente-color);
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column-reverse;
 }
