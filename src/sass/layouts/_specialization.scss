@@ -42,6 +42,10 @@
       margin-bottom: 10px;
     }
   }
+
+  &__item:hover {
+    transform: skewY(10deg);
+  }
 }
 
 .specialization .grid-item {

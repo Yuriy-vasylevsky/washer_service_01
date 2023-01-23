@@ -8,7 +8,7 @@
     position: relative;
     z-index: 100;
   }
-  // background-image: url(../images/water/2.png);
+  // background-image: url(../images/advances/bg2.png);
   // background-repeat: no-repeat;
   // background-size: auto;
   // background-position-x: -144px;
@@ -54,6 +54,22 @@
   }
 }
 
+.advances::before {
+  content: '';
+  background-image: url(../images/advances/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 122px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1094px;
+  height: 400px;
+  z-index: 1;
+  // opacity: 0.7;
+}
+
 .advances .grid-item {
   @media screen and (min-width: 768px) {
     --grid-item: 2;
@@ -81,8 +97,10 @@
   background: var(--second-bg-color);
   border: 1.4px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
-  padding: 34px 24px 34px 24px;
+  padding: 14px 14px 14px 14px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 100;
 }
 
 .advances__chief:hover {
