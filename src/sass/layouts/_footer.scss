@@ -1,4 +1,6 @@
 .footer {
+  position: relative;
+  z-index: 100;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #111111;
@@ -130,7 +132,7 @@
   }
 
   &__link {
-    font-size: 20px;
+    // font-size: 20px;
 
     @media screen and (max-width: 1122px) {
       font-size: 14px;
@@ -144,8 +146,9 @@
 .social-item {
   margin-right: 20px;
   text-align: center;
+
   @media screen and (max-width: 1122px) {
-    margin-right: 0px;
+    // margin-right: 0px;
     margin-bottom: 10px;
   }
 }
@@ -154,13 +157,17 @@
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
-    flex-direction: row;
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
   }
 
-  @media screen and (max-width: 1122px) {
-    flex-direction: column;
+  @media screen and (max-width: 480px) {
+    padding-top: 10px;
   }
+
+  // @media screen and (max-width: 1122px) {
+  //   flex-direction: column;
+  // }
 }
 
 .social-icon {
@@ -179,6 +186,6 @@
   justify-content: start;
 }
 
-.footer-social-list {
-  margin-right: 15px;
-}
+// .footer-social-list {
+//   margin-right: 15px;
+// }

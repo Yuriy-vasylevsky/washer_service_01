@@ -38,12 +38,9 @@
 
   &__item {
     @media screen and (max-width: 480px) {
-      max-width: 300px;
+      max-width: 220px;
       margin-bottom: 10px;
     }
-  }
-
-  &__img {
   }
 }
 
