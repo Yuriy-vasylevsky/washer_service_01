@@ -102,7 +102,7 @@
   @media screen and (max-width: 1122px) {
     width: 750px;
     height: 530px;
-    top: 145px;
+    top: 270px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -110,7 +110,7 @@
   @media screen and (max-width: 768px) {
     width: 430px;
     height: 290px;
-    top: 350px;
+    top: 500px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -119,9 +119,13 @@
     width: 320px;
     height: 200px;
 
-    top: 350px;
+    top: 490px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 }
 

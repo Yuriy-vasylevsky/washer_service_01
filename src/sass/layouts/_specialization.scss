@@ -6,6 +6,10 @@
   // background-position-y: 60px;
 
   padding-bottom: 100px;
+  @media screen and (max-width: 480px) {
+    padding-bottom: 50px;
+  }
+
   &__container {
   }
 
@@ -37,8 +41,9 @@
   }
 
   &__item {
+    transition: all 250ms linear;
     @media screen and (max-width: 480px) {
-      max-width: 220px;
+      max-width: 200px;
       margin-bottom: 10px;
     }
   }
