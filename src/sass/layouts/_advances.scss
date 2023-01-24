@@ -62,13 +62,14 @@
     z-index: 1;
   }
 
-  @media screen and (max-width: 425px) {
-    top: 211px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 760px;
-    height: 269px;
-    z-index: 1;
+  @media screen and (max-width: 768px) {
+    // top: 211px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // width: 760px;
+    // height: 269px;
+    // z-index: 1;
+    display: none;
   }
 }
 
