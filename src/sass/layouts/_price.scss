@@ -2,26 +2,67 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.container {
-}
-.price__container {
-}
-.title {
-}
+
+// .price__container {
+// }
+
 .price__title {
   padding-bottom: 30px;
 }
-.price__list {
-}
+
+// .price__list {
+// }
 
 .price__item {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
+
 .item-box {
   display: flex;
   justify-content: space-between;
 }
+
 .item-box__text {
+  font-size: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.52%;
+  color: var(--main-text-color);
+  flex-basis: calc(70% - 15px);
 }
 .item-box__price {
+  font-size: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.52%;
+  color: var(--main-text-color);
+  flex-basis: calc(30% - 15px);
+  text-align: center;
+}
+
+// .price-notify {
+
+// }
+
+.price-notify__box {
+  background: var(--second-bg-color);
+  border: 1.4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 24px 14px 24px 14px;
+  margin-bottom: 100px;
+}
+
+.price-notify__title {
+  padding-bottom: 20px;
+}
+
+.price-notify__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.52%;
+  color: var(--main-text-color);
+  text-align: center;
+  opacity: 0.3;
 }
