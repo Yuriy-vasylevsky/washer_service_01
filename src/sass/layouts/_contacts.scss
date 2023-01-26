@@ -42,6 +42,7 @@
   }
 
   &__image {
+    // margin-top: 80px;
     position: relative;
     flex-basis: calc(70% - 15px);
     border-radius: 14px;
@@ -66,6 +67,26 @@
   &__title {
     font-size: 32px;
     padding-bottom: 20px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__link:hover {
+    color: var(--main-accente-color);
+  }
+
+  &__link svg {
+    margin-right: 10px;
   }
 
   &__link:not(:last-child) {
@@ -119,4 +140,13 @@
 
 .image-button:hover {
   border: 2px solid var(--main-accente-color);
+}
+
+.icon-phone {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-clock {
+  margin-right: 10px;
 }
