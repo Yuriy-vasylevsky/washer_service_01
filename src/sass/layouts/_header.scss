@@ -9,6 +9,8 @@
   display: block;
   width: 150px;
   transition: all 300ms linear;
+  position: relative;
+  z-index: 100;
 }
 
 .logo:hover {
@@ -83,6 +85,10 @@
 .header__button {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .button {
@@ -100,15 +106,11 @@
     font-size: 12px;
     padding: 10px 20px 10px 20px;
   }
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 }
 
 .button:hover {
   border: 2px solid var(--main-accente-color);
-  transform: scale(1.2);
+  // transform: scale(1.2);
 }
 
 .icon {

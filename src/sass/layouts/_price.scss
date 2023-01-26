@@ -1,6 +1,38 @@
 .price {
   padding-top: 100px;
   padding-bottom: 100px;
+
+  // position: relative;
+  // z-index: 100;
+}
+
+.price::after {
+  content: '';
+  background-image: url(../images/water/2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: -148px;
+  width: 1000px;
+  height: 1000px;
+  z-index: 1;
+  opacity: 0.7;
+
+  @media screen and (max-width: 1122px) {
+    width: 800px;
+    height: 800px;
+    top: 34px;
+    left: -120px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 360px;
+    height: 400px;
+    top: 89px;
+    left: -54px;
+  }
 }
 
 // .price__container {
@@ -8,6 +40,9 @@
 
 .price__title {
   padding-bottom: 30px;
+
+  position: relative;
+  z-index: 100;
 }
 
 // .price__list {
@@ -31,7 +66,11 @@
   line-height: 162.52%;
   color: var(--main-text-color);
   flex-basis: calc(70% - 15px);
+
+  position: relative;
+  z-index: 100;
 }
+
 .item-box__price {
   font-size: 22px;
   font-weight: 500;
@@ -42,11 +81,14 @@
   text-align: center;
 }
 
-// .price-notify {
-
-// }
+.price-notify {
+  position: relative;
+  z-index: 100;
+}
 
 .price-notify__box {
+  position: relative;
+  z-index: 100;
   background: var(--second-bg-color);
   border: 1.4px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
@@ -54,15 +96,51 @@
   margin-bottom: 100px;
 }
 
+.price-notify__box:hover {
+  background: var(--accente-bg-color);
+}
+
 .price-notify__title {
   padding-bottom: 20px;
+  position: relative;
+  z-index: 100;
 }
 
 .price-notify__text {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 162.52%;
   color: var(--main-text-color);
   text-align: center;
   opacity: 0.3;
+  position: relative;
+  z-index: 100;
+}
+
+.price-notify::before {
+  content: '';
+  background-image: url(../images/advances/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1094px;
+  height: 400px;
+  z-index: 1;
+
+  @media screen and (max-width: 1122px) {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 760px;
+    height: 269px;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
