@@ -10,7 +10,7 @@
 }
 
 .contacts {
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px;
 
   @media screen and (max-width: 768px) {
@@ -26,38 +26,53 @@
     }
   }
 
-  &__container {
-  }
-
   &__content {
     flex-basis: calc(30% - 15px);
   }
 
   &__title {
-    font-size: 42px;
+    font-size: 66px;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 56px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 46px;
+    }
   }
 
   &__list {
   }
 
   &__image {
-    // margin-top: 80px;
     position: relative;
     flex-basis: calc(70% - 15px);
     border-radius: 14px;
     overflow: hidden;
+
+    @media screen and (max-width: 1122px) {
+      margin-top: 40px;
+    }
   }
 }
 
 .list-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
   &__item {
     padding: 20px;
     border: 1.4px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
     background: #1d1d1d;
 
-    margin-bottom: 15px;
+    @media screen and (max-width: 1122px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__item:hover {
@@ -90,7 +105,7 @@
   }
 
   &__link:not(:last-child) {
-    padding-right: 15px;
+    // padding-right: 15px;
   }
 
   &__blue {

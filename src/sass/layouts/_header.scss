@@ -73,9 +73,17 @@
   color: var(--main-text-color);
   transition: color 300ms;
 
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .icon-phone {
+  margin-right: 10px;
+}
+
+.header .contact__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .contact__link-blue {

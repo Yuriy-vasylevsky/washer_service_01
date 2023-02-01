@@ -108,8 +108,12 @@
   &__box {
     display: flex;
     justify-content: space-between;
-    flex-basis: calc(60% - 50px);
+    flex-basis: calc(50% - 50px);
     flex-direction: row-reverse;
+
+    @media screen and (max-width: 1122px) {
+      flex-basis: calc(60% - 50px);
+    }
 
     @media screen and (max-width: 768px) {
       width: 100%;
@@ -125,9 +129,8 @@
   }
 }
 
-.contact {
+.footer .contact {
   &__item:not(:last-child) {
-    padding-bottom: 10px;
     padding-right: 15px;
   }
 
@@ -174,6 +177,10 @@
   width: 40px;
   height: 40px;
   fill: var(--main-text-color);
+}
+
+.footer .icon-phone {
+  margin-right: 10px;
 }
 
 .social-icon:hover {
