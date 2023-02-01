@@ -44,6 +44,10 @@ p {
   color: var(--main-text-color);
 }
 
+.is-hiden-non {
+  display: none;
+}
+
 // .visually-hidden {
 //   position: absolute !important;
 //   clip: rect(1px 1px 1px 1px);

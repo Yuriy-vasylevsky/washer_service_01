@@ -79,7 +79,6 @@
     font-size: 18px;
     line-height: 162.52%;
     opacity: 0.3;
-    display: none;
   }
 }
 
@@ -90,7 +89,7 @@
   background-size: cover;
   display: block;
   position: absolute;
-  top: 210px;
+  bottom: -155px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -102,7 +101,7 @@
   @media screen and (max-width: 1122px) {
     width: 750px;
     height: 530px;
-    top: 240px;
+    top: 270px;
     left: 50%;
     transform: translateX(-50%);
   }
