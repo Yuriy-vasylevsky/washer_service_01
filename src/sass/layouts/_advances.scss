@@ -136,7 +136,7 @@
 }
 
 .cards__body {
-  background: #1d1d1d;
+  background: var(--second-bg-color);
   border: 1.4px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   padding: 28px 24px 28px 24px;

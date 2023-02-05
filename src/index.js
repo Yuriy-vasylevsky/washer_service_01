@@ -2,21 +2,15 @@ import './sass/main.scss';
 import './js/mobile-menu';
 
 const faqList = document.querySelector('.faq__list');
-
 faqList.addEventListener('click', openAnsver);
 
 let faqAnsver = null;
-console.log('faqAnsver', faqAnsver);
 let ansverindex = null;
 
-function findElToOpen(e) {
-  let faqAnsver = document.querySelector(`#p-${ansverindex}`);
-
-  if ('use' !== e.target.nodeName && 'svg' !== e.target.nodeName) {
-    return;
-  } else {
-    faqAnsver.classList.toggle('is-hiden-non');
-  }
+function openAnsver(e) {
+  clickOnSvg(e);
+  findElToOpen(e);
+  openFindEl(e);
 }
 
 function clickOnSvg(e) {
@@ -27,7 +21,15 @@ function clickOnSvg(e) {
   }
 }
 
-function openAnsver(e) {
-  clickOnSvg(e);
-  findElToOpen(e);
+function findElToOpen(e) {
+  faqAnsver = document.querySelector(`#p-${ansverindex}`);
+  return faqAnsver;
+}
+
+function openFindEl(e) {
+  if ('use' !== e.target.nodeName && 'svg' !== e.target.nodeName) {
+    return;
+  } else {
+    faqAnsver.classList.toggle('is-hiden-non');
+  }
 }

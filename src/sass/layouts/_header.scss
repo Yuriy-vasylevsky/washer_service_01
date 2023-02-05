@@ -1,8 +1,16 @@
 .header {
   height: 134px;
-  background: var(--second-accente-color);
+  background-color: var(--maim-bg-color);
   display: flex;
   align-items: center;
+}
+
+.header-contact {
+  background-color: var(--second-bg-color);
+}
+
+.header-price {
+  background-color: var(--second-bg-color);
 }
 
 .logo {
