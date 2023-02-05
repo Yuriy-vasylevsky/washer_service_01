@@ -30,6 +30,6 @@ function openFindEl(e) {
   if ('use' !== e.target.nodeName && 'svg' !== e.target.nodeName) {
     return;
   } else {
-    faqAnsver.classList.toggle('is-hiden-non');
+    faqAnsver.classList.toggle('is-open');
   }
 }

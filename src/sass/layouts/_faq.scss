@@ -58,9 +58,6 @@
     }
   }
 
-  &__list {
-  }
-
   &__item {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   }
@@ -78,7 +75,25 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 162.52%;
-    opacity: 0.3;
+    color: var(--second-text-color);
+    border-radius: 30px;
+    background-color: var(--second-bg-color);
+    // width: 1px;
+    // height: 1px;
+    // opacity: 0;
+    display: none;
+  }
+
+  &__ansver.is-open {
+    // opacity: 1;
+    // transition: all 0.3s linear;
+
+    // width: 100%;
+    // height: 100%;
+    // overflow: hidden;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: block;
   }
 }
 

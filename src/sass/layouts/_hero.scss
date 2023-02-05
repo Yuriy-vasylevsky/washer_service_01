@@ -65,11 +65,10 @@
 
 .hero__text {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 162.52%;
-  opacity: 0.3;
   max-width: 400px;
-
+  color: var(--second-text-color);
   @media screen and (max-width: 767px) {
     text-align: center;
     margin-right: auto;
