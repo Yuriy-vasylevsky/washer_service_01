@@ -1,24 +1,33 @@
 import './sass/main.scss';
 import './js/mobile-menu';
 
-const faqBtnOpen = document.querySelectorAll('.faq__icon');
-const faqAnsver = document.querySelectorAll('.faq__ansver');
+const faqList = document.querySelector('.faq__list');
+
+faqList.addEventListener('click', openAnsver);
+
+let faqAnsver = null;
 console.log('faqAnsver', faqAnsver);
-console.log('faqBtnOpen', faqBtnOpen);
+let ansverindex = null;
 
-faqBtnOpen[0].addEventListener('click', () => {
-  faqAnsver[0].classList.toggle('is-hiden-non');
-  console.log('faqAnsver', faqAnsver[0]);
-});
+function findElToOpen(e) {
+  let faqAnsver = document.querySelector(`#p-${ansverindex}`);
 
-faqBtnOpen[1].addEventListener('click', () => {
-  faqAnsver[1].classList.toggle('is-hiden-non');
-});
+  if ('use' !== e.target.nodeName && 'svg' !== e.target.nodeName) {
+    return;
+  } else {
+    faqAnsver.classList.toggle('is-hiden-non');
+  }
+}
 
-faqBtnOpen[2].addEventListener('click', () => {
-  faqAnsver[2].classList.toggle('is-hiden-non');
-});
+function clickOnSvg(e) {
+  if ('use' !== e.target.nodeName && 'svg' !== e.target.nodeName) {
+    return;
+  } else {
+    ansverindex = e.target.dataset.index;
+  }
+}
 
-faqBtnOpen[3].addEventListener('click', () => {
-  faqAnsver[3].classList.toggle('is-hiden-non');
-});
+function openAnsver(e) {
+  clickOnSvg(e);
+  findElToOpen(e);
+}
