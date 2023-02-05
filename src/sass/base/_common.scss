@@ -8,6 +8,10 @@ body {
   background-color: var(--maim-bg-color);
 }
 
+.overflov {
+  overflow: hidden;
+}
+
 img {
   display: block;
   width: 100%;
