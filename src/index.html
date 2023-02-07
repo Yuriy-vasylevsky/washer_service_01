@@ -62,55 +62,51 @@
 
         <div class="icon-box">
           <svg class="icon icon-menu">
-            <use href="./images/sprite.svg#menu"></use>
+            <use href="./images/sprite.svg#menu" class="menu-open"></use>
+            <use href="./images/sprite.svg#cross" class="menu-close"></use>
           </svg>
         </div>
       </div>
     </header>
+    <!-- мобільне меню -->
+    <div class="mobile is-hiden">
+      <a href="/" class="mobile__logo">
+        <img src="./images/logo/logo.png" alt="логотип" />
+      </a>
+
+      <nav class="mobile__nav">
+        <ul class="mobile__list list">
+          <li class="mobile__item">
+            <a href="/" class="mobile__link link"> Головна </a>
+          </li>
+
+          <li class="mobile__item">
+            <a href="./price.html" class="mobile__link link">Ціни</a>
+          </li>
+
+          <li class="mobile__item">
+            <a href="./contacts.html" class="mobile__link link"> Контакти </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile__contact contact-mobile list">
+        <li class="contact-mobile__item">
+          <a href="tel:0987359299" class="contact-mobile__link link">
+            <span class="contact__link-blue">(098)</span> 7359299
+          </a>
+        </li>
+
+        <li class="contact-mobile__item">
+          <a href="tel:0987359299" class="contact-mobile__link link">
+            <span class="contact__link-blue">(098)</span> 7359299
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <!-- main -->
     <main class="main">
-      <!-- мобільне меню -->
-      <div class="mobile is-hiden">
-        <svg class="icon icon-menu-close">
-          <use href="./images/sprite.svg#menu"></use>
-        </svg>
-
-        <a href="/" class="mobile__logo">
-          <img src="./images/logo/logo.png" alt="логотип" />
-        </a>
-
-        <nav class="mobile__nav">
-          <ul class="mobile__list list">
-            <li class="mobile__item">
-              <a href="/" class="mobile__link link"> Головна </a>
-            </li>
-
-            <li class="mobile__item">
-              <a href="./price.html" class="mobile__link link">Ціни</a>
-            </li>
-
-            <li class="mobile__item">
-              <a href="./contacts.html" class="mobile__link link"> Контакти </a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="mobile__contact contact-mobile list">
-          <li class="contact-mobile__item">
-            <a href="tel:0987359299" class="contact-mobile__link link">
-              <span class="contact__link-blue">(098)</span> 7359299
-            </a>
-          </li>
-
-          <li class="contact-mobile__item">
-            <a href="tel:0987359299" class="contact-mobile__link link">
-              <span class="contact__link-blue">(098)</span> 7359299
-            </a>
-          </li>
-        </ul>
-      </div>
-
       <!-- hero -->
       <section class="hero">
         <div class="container hero__container">
@@ -118,9 +114,9 @@
             <h1 class="hero__title title text-focus-in">
               Ремонт пральних машин у Києві та передмісті
             </h1>
-            <p class="hero__text text-focus-in">
+            <!-- <p class="hero__text text-focus-in">
               Швидкий та якісний ремонт пральних машинок будь-яких брендів
-            </p>
+            </p> -->
           </div>
 
           <div class="hero__images">
@@ -431,7 +427,8 @@
                     <h3 class="faq__sub-title">Яка гарантія на послуги?</h3>
 
                     <svg class="icon faq__icon" data-index="1">
-                      <use href="./images/sprite.svg#menu" data-index="1"></use>
+                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="1"></use>
                     </svg>
                   </div>
 
@@ -451,7 +448,8 @@
                     <h3 class="faq__sub-title">Скільки коштує виклик майстра?</h3>
 
                     <svg class="icon faq__icon" data-index="2">
-                      <use href="./images/sprite.svg#menu" data-index="2"></use>
+                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="2"></use>
                     </svg>
                   </div>
 
@@ -468,7 +466,8 @@
                     <h3 class="faq__sub-title">Що таке консультація майстра?</h3>
 
                     <svg class="icon faq__icon" data-index="3">
-                      <use href="./images/sprite.svg#menu" data-index="3"></use>
+                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="3"></use>
                     </svg>
                   </div>
 
@@ -493,7 +492,8 @@
                     <h3 class="faq__sub-title">Які способи оплати?</h3>
 
                     <svg class="icon faq__icon" data-index="4">
-                      <use href="./images/sprite.svg#menu" data-index="4"></use>
+                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="4"></use>
                     </svg>
                   </div>
 

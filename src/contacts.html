@@ -59,58 +59,54 @@
         <div class="header__button">
           <a href="" class="button link">Залишити заявку</a>
         </div>
-
         <div class="icon-box">
           <svg class="icon icon-menu">
-            <use href="./images/sprite.svg#menu"></use>
+            <use href="./images/sprite.svg#menu" class="menu-open"></use>
+            <use href="./images/sprite.svg#cross" class="menu-close"></use>
           </svg>
         </div>
       </div>
     </header>
 
-    <!-- main -->
-    <main class="main">
-      <!-- мобільне меню -->
-      <div class="mobile is-hiden">
-        <svg class="icon icon-menu-close">
-          <use href="./images/sprite.svg#menu"></use>
-        </svg>
+    <!-- мобільне меню -->
+    <div class="mobile is-hiden">
+      <a href="./" class="mobile__logo">
+        <img src="./images/logo/logo.png" alt="логотип" />
+      </a>
 
-        <a href="/" class="mobile__logo">
-          <img src="./images/logo/logo.png" alt="логотип" />
-        </a>
-
-        <nav class="mobile__nav">
-          <ul class="mobile__list list">
-            <li class="mobile__item">
-              <a href="/" class="mobile__link link"> Головна </a>
-            </li>
-
-            <li class="mobile__item">
-              <a href="./price.html" class="mobile__link link">Ціни</a>
-            </li>
-
-            <li class="mobile__item">
-              <a href="./contacts.html" class="mobile__link link"> Контакти </a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="mobile__contact contact-mobile list">
-          <li class="contact-mobile__item">
-            <a href="tel:0987359299" class="contact-mobile__link link">
-              <span class="contact__link-blue">(098)</span> 7359299
-            </a>
+      <nav class="mobile__nav">
+        <ul class="mobile__list list">
+          <li class="mobile__item">
+            <a href="./" class="mobile__link link"> Головна </a>
           </li>
 
-          <li class="contact-mobile__item">
-            <a href="tel:0987359299" class="contact-mobile__link link">
-              <span class="contact__link-blue">(098)</span> 7359299
-            </a>
+          <li class="mobile__item">
+            <a href="./price.html" class="mobile__link link">Цiни</a>
+          </li>
+
+          <li class="mobile__item">
+            <a href="./contacts.html" class="mobile__link link"> Контакти </a>
           </li>
         </ul>
-      </div>
+      </nav>
 
+      <ul class="mobile__contact contact-mobile list">
+        <li class="contact-mobile__item">
+          <a href="tel:0987359299" class="contact-mobile__link link">
+            <span class="contact__link-blue">(098)</span> 7359299
+          </a>
+        </li>
+
+        <li class="contact-mobile__item">
+          <a href="tel:0987359299" class="contact-mobile__link link">
+            <span class="contact__link-blue">(098)</span> 7359299
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- main -->
+    <main class="main">
       <section class="contacts">
         <div class="container contacts__container">
           <h2 class="title contacts__title">Як нас знайти</h2>

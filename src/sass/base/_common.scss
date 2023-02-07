@@ -8,6 +8,10 @@ body {
   background-color: var(--maim-bg-color);
 }
 
+use {
+  pointer-events: none;
+}
+
 .overflov {
   overflow: hidden;
 }
