@@ -142,6 +142,8 @@
   color: var(--main-text-color);
   text-align: center;
   background-color: rgba(174, 65, 65, 0.143);
+  padding: 15px;
+  border: 1px solid #fff;
 
   @media screen and (max-width: 768px) {
     top: 100px;
@@ -150,6 +152,7 @@
 
   @media screen and (max-width: 480px) {
     font-size: 16px;
+    padding: 5px;
   }
 }
 

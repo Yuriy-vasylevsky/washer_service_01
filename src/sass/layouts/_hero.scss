@@ -41,15 +41,15 @@
 }
 
 .title {
-  // font-family: 'Alfa Slab One', cursive;
-  font-weight: 500;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
   font-size: 66px;
   line-height: 147.52%;
 }
 
 .hero__title {
   padding-bottom: 36px;
-  font-size: 49px;
+  font-size: 66px;
   @media screen and (max-width: 1122px) and (min-width: 480px) {
     font-size: 52px;
   }
