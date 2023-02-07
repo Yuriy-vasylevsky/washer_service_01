@@ -2,7 +2,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{"./..\\images\\water\\2.png":[["2.2941ae89.png","ESWB"],"ESWB"],"./..\\images\\advances\\bg2.png":[["bg2.0c8cda48.png","T1Ci"],"T1Ci"],"./..\\images\\water\\3.png":[["3.b708542d.png","VhrY"],"VhrY"],"./..\\images\\water\\6.png":[["6.cbeb8322.png","UtH3"],"UtH3"],"./..\\images\\faq\\1.png":[["1.7c6fef5a.png","ZH0u"],"ZH0u"],"./..\\images\\water\\7.png":[["7.4bdde55a.png","dUiO"],"dUiO"]}],"sByI":[function(require,module,exports) {
 var e=document.querySelector(".icon-menu"),o=document.querySelector(".mobile"),t=document.querySelector(".body");e.addEventListener("click",function(){e.classList.toggle("is-open"),o.classList.toggle("is-hiden"),t.classList.toggle("overflov")});
-},{}],"tl45":[function(require,module,exports) {
-"use strict";require("../sass/main.scss"),require("../js/mobile-menu");
-},{"../sass/main.scss":"clu1","../js/mobile-menu":"sByI"}]},{},["tl45"], null)
-//# sourceMappingURL=/washer_service_01/price.38df5434.js.map
+},{}],"tDs7":[function(require,module,exports) {
+var e=document.querySelector(".image-button"),t=document.querySelector(".map-box");e.addEventListener("click",function(){t.classList.toggle("is-hiden-non")});
+},{}],"QKHM":[function(require,module,exports) {
+"use strict";require("../sass/main.scss"),require("../js/mobile-menu"),require("../js/open-map");
+},{"../sass/main.scss":"clu1","../js/mobile-menu":"sByI","../js/open-map":"tDs7"}]},{},["QKHM"], null)
+//# sourceMappingURL=/washer_service_01/contact.a7e24053.js.map

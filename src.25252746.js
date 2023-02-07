@@ -5,4 +5,4 @@ var e=document.querySelector(".icon-menu"),o=document.querySelector(".mobile"),t
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu");var e=document.querySelector(".faq__list");e.addEventListener("click",o);var t=null,n=null,s=null;function o(e){a(e),r(e),c(e),l(e)}function a(e){return"use"!==e.target.nodeName&&"svg"!==e.target.nodeName?void 0:(s=e.target,console.log("selectSvg",s),n=e.target.dataset.index,s)}function r(e){return t=document.querySelector("#p-".concat(n))}function c(e){"use"!==e.target.nodeName&&"svg"!==e.target.nodeName||t.classList.toggle("is-open")}function l(e){"svg"===e.target.nodeName&&s.classList.toggle("is-open")}console.log("selectSvg",s);
 },{"./sass/main.scss":"clu1","./js/mobile-menu":"sByI"}]},{},["Focm"], null)
-//# sourceMappingURL=/washer_service_01/src.37cbb3aa.js.map
+//# sourceMappingURL=/washer_service_01/src.25252746.js.map
