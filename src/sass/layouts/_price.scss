@@ -79,6 +79,8 @@
   color: var(--main-text-color);
   flex-basis: calc(30% - 15px);
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .price-notify {
@@ -124,7 +126,7 @@
   background-size: cover;
   display: block;
   position: absolute;
-  top: -60px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
   width: 1094px;

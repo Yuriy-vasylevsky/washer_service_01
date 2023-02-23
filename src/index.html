@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Washer</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -217,7 +218,10 @@
             </p>
           </div>
 
-          <ul class="advances__list card grid list">
+          <ul
+            class="advances__list card grid list slider"
+            data-slick='{"slidesToShow": 2, "slidesToScroll": 4}'
+          >
             <li class="cards__body grid-item">
               <img src="./images/advances/4.png" class="card__img" loading="lazy" alt="" />
               <h2 class="card__title">Оперативність</h2>
@@ -424,15 +428,15 @@
               <ul class="faq__list list">
                 <li class="faq__item">
                   <div class="faq__box-title">
-                    <h3 class="faq__sub-title">Яка гарантія на послуги?</h3>
+                    <h3 class="faq__sub-title" data-index="0">Яка гарантія на послуги?</h3>
 
-                    <svg class="icon faq__icon" data-index="1">
+                    <svg class="icon faq__icon" data-index="0">
                       <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="1"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
                     </svg>
                   </div>
 
-                  <p class="faq__ansver" id="p-1">
+                  <p class="faq__ansver" id="p-0">
                     Сервісна служба надає гарантію на виконані роботи, які ви замовили через
                     менеджера. Строк гарантії вказується у акті виконаних робіт, який підписується
                     майстром і клієнтом після надання послуги. Гарантіийний термін триває 1 рік.
@@ -441,15 +445,15 @@
 
                 <li class="faq__item">
                   <div class="faq__box-title">
-                    <h3 class="faq__sub-title">Скільки коштує виклик майстра?</h3>
+                    <h3 class="faq__sub-title" data-index="1">Скільки коштує виклик майстра?</h3>
 
-                    <svg class="icon faq__icon" data-index="2">
+                    <svg class="icon faq__icon" data-index="1">
                       <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="2"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
                     </svg>
                   </div>
 
-                  <p class="faq__ansver" id="p-2">
+                  <p class="faq__ansver" id="p-1">
                     Виклик майстра додому безкоштовний! Вы платите тільки за якісно виконану роботу,
                     або за консультацію майстра на місці, а не за те, що майстер просто приїхав.
                     Якщо майстер не може виконати роботу зі своєї вини (немає інструменту, не вміє),
@@ -459,15 +463,15 @@
 
                 <li class="faq__item">
                   <div class="faq__box-title">
-                    <h3 class="faq__sub-title">Що таке консультація майстра?</h3>
+                    <h3 class="faq__sub-title" data-index="2">Що таке консультація майстра?</h3>
 
-                    <svg class="icon faq__icon" data-index="3">
+                    <svg class="icon faq__icon" data-index="2">
                       <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="3"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
                     </svg>
                   </div>
 
-                  <p class="faq__ansver" id="p-3">
+                  <p class="faq__ansver" id="p-2">
                     Консультація майстра - це можливість отримати професійну допомогу та поради щодо
                     виявлених несправностей в роботі пральної машини. Консультація майстра допомагає
                     клієнту краще зрозуміти проблему та надає професійну допомогу у її вирішенні, а
@@ -478,15 +482,15 @@
 
                 <li class="faq__item">
                   <div class="faq__box-title">
-                    <h3 class="faq__sub-title">Які способи оплати?</h3>
+                    <h3 class="faq__sub-title" data-index="3">Які способи оплати?</h3>
 
-                    <svg class="icon faq__icon" data-index="4">
+                    <svg class="icon faq__icon" data-index="3">
                       <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up" data-index="4"></use>
+                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
                     </svg>
                   </div>
 
-                  <p class="faq__ansver is-hiden-faq" id="p-4">
+                  <p class="faq__ansver is-hiden-faq" id="p-3">
                     Оплатити можна готівкою або перевести гроші на карту.
                   </p>
                 </li>
@@ -588,5 +592,9 @@
     </footer>
 
     <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"
+    ></script>
   </body>
 </html>
