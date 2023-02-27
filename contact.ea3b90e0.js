@@ -2,7 +2,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{"./..\\images\\water\\2.png":[["2.d43a3d21.png","ESWB"],"ESWB"],"./..\\images\\advances\\bg2.png":[["bg2.5f44922e.png","T1Ci"],"T1Ci"],"./..\\images\\water\\3.png":[["3.acf81a84.png","VhrY"],"VhrY"],"./..\\images\\water\\6.png":[["6.8e202882.png","UtH3"],"UtH3"],"./..\\images\\faq\\1.png":[["1.be9ab0c0.png","ZH0u"],"ZH0u"],"./..\\images\\water\\7.png":[["7.c96f79c8.png","dUiO"],"dUiO"]}],"sByI":[function(require,module,exports) {
 var e=document.querySelector(".icon-menu"),o=document.querySelector(".mobile"),t=document.querySelector(".body");e.addEventListener("click",function(){e.classList.toggle("is-open"),o.classList.toggle("is-hiden"),t.classList.toggle("overflov")});
-},{}],"wWBc":[function(require,module,exports) {
-"use strict";require("../sass/main.scss"),require("./mobile-menu"),$(document).ready(function(){$(".slider").slick({dots:!0,infinite:!0,speed:500,slidesToShow:4,adaptiveHeight:!0,responsive:[{breakpoint:1200,settings:{slidesToShow:3,infinite:!0}},{breakpoint:768,settings:{slidesToShow:2,dots:!0}},{breakpoint:480,settings:{slidesToShow:1,dots:!0}}]})});
-},{"../sass/main.scss":"clu1","./mobile-menu":"sByI"}]},{},["wWBc"], null)
-//# sourceMappingURL=/washer_service_01/test.c550fd90.js.map
+},{}],"tDs7":[function(require,module,exports) {
+var e=document.querySelector(".image-button"),t=document.querySelector(".map-box");function n(t){"true"===e.dataset.open?s(t):o(t)}function o(n){console.log("отрабртал опен"),e.textContent="Приховати карту",t.classList.remove("is-hiden-non"),e.dataset.open="true"}function s(n){console.log("отрабртал клоуз"),e.textContent="Показати карту",t.classList.add("is-hiden-non"),e.dataset.open="false"}e.addEventListener("click",n);
+},{}],"QKHM":[function(require,module,exports) {
+"use strict";require("../sass/main.scss"),require("../js/mobile-menu"),require("../js/open-map");
+},{"../sass/main.scss":"clu1","../js/mobile-menu":"sByI","../js/open-map":"tDs7"}]},{},["QKHM"], null)
+//# sourceMappingURL=/washer_service_01/contact.ea3b90e0.js.map

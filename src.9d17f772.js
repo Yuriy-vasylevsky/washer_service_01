@@ -2,7 +2,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{"./..\\images\\water\\2.png":[["2.d43a3d21.png","ESWB"],"ESWB"],"./..\\images\\advances\\bg2.png":[["bg2.5f44922e.png","T1Ci"],"T1Ci"],"./..\\images\\water\\3.png":[["3.acf81a84.png","VhrY"],"VhrY"],"./..\\images\\water\\6.png":[["6.8e202882.png","UtH3"],"UtH3"],"./..\\images\\faq\\1.png":[["1.be9ab0c0.png","ZH0u"],"ZH0u"],"./..\\images\\water\\7.png":[["7.c96f79c8.png","dUiO"],"dUiO"]}],"sByI":[function(require,module,exports) {
 var e=document.querySelector(".icon-menu"),o=document.querySelector(".mobile"),t=document.querySelector(".body");e.addEventListener("click",function(){e.classList.toggle("is-open"),o.classList.toggle("is-hiden"),t.classList.toggle("overflov")});
-},{}],"tl45":[function(require,module,exports) {
-"use strict";require("../sass/main.scss"),require("../js/mobile-menu");
-},{"../sass/main.scss":"clu1","../js/mobile-menu":"sByI"}]},{},["tl45"], null)
-//# sourceMappingURL=/washer_service_01/price.87df5807.js.map
+},{}],"cDEs":[function(require,module,exports) {
+$(document).ready(function(){$(".advances__list").slick({dots:!0,infinite:!0,speed:500,slidesToShow:3,prevArrow:'<button type="button" class="slick-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',nextArrow:'<button type="button" class="slick-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6L15 12L9 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',responsive:[{breakpoint:1200,settings:{slidesToShow:2,infinite:!0}},{breakpoint:768,settings:{slidesToShow:1,dots:!0}},{breakpoint:480,settings:{slidesToShow:1,adaptiveHeight:!0}}]})});
+},{}],"Focm":[function(require,module,exports) {
+"use strict";require("./sass/main.scss"),require("./js/mobile-menu"),require("./js/slick");var e=document.querySelector(".faq__list");console.log("faqList",e);var s=document.querySelectorAll(".faq__ansver");function t(e){var s=e.target,t=e.target.nextElementSibling;switch(s.tagName){case"H3":a(s.dataset.index),i(t);break;case"svg":a(s.dataset.index),i(s)}}function a(e){s[e].classList.toggle("is-open")}function i(e){e.classList.toggle("is-open")}console.log("faqAnswers",s),e.addEventListener("click",t);
+},{"./sass/main.scss":"clu1","./js/mobile-menu":"sByI","./js/slick":"cDEs"}]},{},["Focm"], null)
+//# sourceMappingURL=/washer_service_01/src.9d17f772.js.map
