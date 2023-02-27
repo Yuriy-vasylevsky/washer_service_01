@@ -1,0 +1,39 @@
+.slick-prev {
+  top: 105%;
+  left: 37%;
+
+  @media screen and (max-width: 1122px) and (min-width: 480px) {
+    left: 20%;
+  }
+
+  @media screen and (max-width: 480px) {
+    left: 10%;
+  }
+}
+
+.slick-next {
+  top: 105%;
+  right: 37%;
+
+  @media screen and (max-width: 1122px) and (min-width: 480px) {
+    right: 20%;
+  }
+
+  @media screen and (max-width: 480px) {
+    right: 10%;
+  }
+}
+
+.slick-prev:before {
+  display: none;
+}
+
+.slick-next:before {
+  display: none;
+}
+
+.slick-dots {
+  // position: relative;
+  z-index: -1;
+  bottom: -40px;
+}

@@ -15,11 +15,4 @@
 @import './components/bg-svg';
 @import './components/footer-bg';
 @import './components/text-animation';
-
-.slider {
-  width: 80%;
-  margin: 0 auto;
-}
-.slider img {
-  width: 100%;
-}
+@import './components/slick-slider';
