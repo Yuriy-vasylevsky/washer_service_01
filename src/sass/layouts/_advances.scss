@@ -21,7 +21,7 @@
   background-size: cover;
   display: block;
   position: absolute;
-  top: -124px;
+  top: -125px;
   left: -148px;
   width: 1000px;
   height: 1000px;
@@ -133,7 +133,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 70px 0 auto;
+
   @media screen and (max-width: 767px) {
     justify-content: center;
     font-size: 16px;
@@ -145,7 +146,7 @@
   border: 1.4px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   padding: 28px 24px 28px 24px;
-  min-height: 540px;
+  min-height: 550px;
 }
 
 .cards__body:hover {
@@ -153,7 +154,8 @@
 }
 
 .cards__body:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .card__img {

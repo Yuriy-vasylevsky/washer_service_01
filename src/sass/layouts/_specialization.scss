@@ -49,13 +49,13 @@
     }
   }
 
-  &__item:hover {
-    transform: skewY(10deg);
+  &__item:nth-child(6) {
+    filter: brightness(0.5);
   }
 }
 
 .specialization .grid-item {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 340px) {
     --grid-item: 2;
   }
 
