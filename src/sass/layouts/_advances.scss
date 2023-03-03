@@ -50,7 +50,7 @@
   background-size: cover;
   display: block;
   position: absolute;
-  top: 122px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   width: 1094px;
@@ -58,7 +58,7 @@
   z-index: 1;
 
   @media screen and (max-width: 1122px) {
-    top: 211px;
+    top: 35px;
     left: 50%;
     transform: translateX(-50%);
     width: 760px;
@@ -83,7 +83,8 @@
 
 .advances__title.title {
   text-align: center;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  // padding-bottom: 70px;
 
   @media screen and (max-width: 1122px) and (min-width: 480px) {
     font-size: 52px;

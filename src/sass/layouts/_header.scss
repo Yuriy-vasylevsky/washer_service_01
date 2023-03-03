@@ -43,6 +43,11 @@
   align-items: center;
 }
 
+.header__button {
+  background-color: transparent;
+  border: none;
+}
+
 .header__item:not(:last-child) {
   padding-right: 41px;
 }
@@ -100,15 +105,6 @@
 
 .contact__link:hover {
   color: var(--main-accente-color);
-}
-
-.header__button {
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 }
 
 .button {

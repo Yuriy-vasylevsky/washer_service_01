@@ -74,6 +74,10 @@
   &__item {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   }
+  .faq__button {
+    border: none;
+    background-color: transparent;
+  }
 
   &__sub-title {
     font-weight: 600;

@@ -3,12 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Washer-service - Ваш надійний помічник</title>
+    <title>Washer-service - Надійний ремонт пральних машин</title>
     <!-- CEO -->
     <meta
       name="description"
-      content=" Якісний ремонт пральної машини на дому в Києві. Низькі ціни та гарантія на всі види робіт. Телефонуйте прямо зараз!"
+      content=" Якісний ремонт пральної машини на дому в Києві. Низькі ціни та гарантія на всі види робіт."
     />
+    <meta
+      name="keywords"
+      content=" ремонт пральних машин, сервіс пральних машин, заміна запчастин для пральних машин, пральні машини, обслуговування пральних машин, діагностика пральних машин, ремонт електроніки пральних машин "
+    />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ремонт пральних машин в м.Київ" />
+    <meta
+      property="og:description"
+      content="Якісний ремонт пральної машини на дому в Києві. Ремонт стиральных машин Киев. Діагностика та консультація ☎ +38 (098) 73-59-299"
+    />
+    <meta property="og:url" content="https://w-07.netlify.app" />
+    <meta property="og:site_name" content="Ремонт пральних машин в Києві." />
 
     <!-- Шрифти -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,10 +95,17 @@
         </ul>
 
         <div class="icon-box">
-          <svg class="icon icon-menu">
-            <use href="./images/sprite.svg#menu" class="menu-open"></use>
-            <use href="./images/sprite.svg#cross" class="menu-close"></use>
-          </svg>
+          <button
+            class="header__button"
+            title="Кнопка для відкриття мобільного меню"
+            aria-label="Відкрити мобільне меню"
+            aria-expanded="false"
+          >
+            <svg class="icon icon-menu">
+              <use href="./images/sprite.svg#menu" class="menu-open"></use>
+              <use href="./images/sprite.svg#cross" class="menu-close"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -93,7 +113,7 @@
     <!-- мобільне меню -->
     <div class="mobile is-hiden">
       <a href="./" class="mobile__logo">
-        <img src="./images/logo/logo.png" alt="логотип" />
+        <img src="./images/logo/logo.png" alt="логотип компанії washer-service" />
       </a>
 
       <nav class="mobile__nav">
@@ -142,7 +162,15 @@
           </div>
 
           <div class="hero__images">
-            <img src="./images/hero/1.png" loading="lazy" alt="майстер по ремонту пральних машин" />
+            <picture>
+              <source srcset="./images/hero/1.png" media="(min-width: 769px)" type="image/png" />
+              <source
+                srcset="./images/hero/1-480.png"
+                media="(max-width: 768px)"
+                type="image/png"
+              />
+              <img src="./images/hero/1.png " alt="пральна машинка" />
+            </picture>
           </div>
         </div>
 
@@ -214,30 +242,35 @@
       <!-- advances -->
       <section class="advances">
         <div class="container advances__container">
-          <h2 class="advances__title title text-focus-infimg">Наші переваги</h2>
-
           <div class="advances__chief chief">
-            <h3 class="chief__title">
+            <h2 class="chief__title">
               Виклик майстра та діагностика - <span class="hief__title-blue">Безкоштовно</span>
-            </h3>
+            </h2>
             <p class="chief__text">При умові подальшого ремонту пральної машинки</p>
           </div>
 
           <div class="advances__chief chief">
-            <h3 class="chief__title">
+            <h2 class="chief__title">
               Консультація нашого майстра по телефону -
               <span class="hief__title-blue">Безкоштовно</span>
-            </h3>
+            </h2>
             <p class="chief__text">
               За статистикою 30% поломок не є критичними і їх можливо виправити самотужки. А наші
               майстри вам допоможуть у цьому.
             </p>
           </div>
 
+          <h2 class="advances__title title text-focus-infimg">Наші переваги</h2>
+
           <ul class="advances__list card list">
             <li class="cards__body">
-              <img src="./images/advances/4.png" class="card__img" loading="lazy" alt="" />
-              <h2 class="card__title">Оперативність</h2>
+              <img
+                src="./images/advances/4.png"
+                class="card__img"
+                loading="lazy"
+                alt="іконка часів"
+              />
+              <h3 class="card__title">Оперативність</h3>
               <p class="card__text">
                 Наша компанія створена фахівцями з ремонту пральних машин. У нас є багато
                 висококваліфікованих майстрів, які зможуть приїхати до Вас максимально швидко та у
@@ -247,8 +280,13 @@
             </li>
 
             <li class="cards__body">
-              <img src="./images/advances/7.png" loading="lazy" class="card__img" alt="" />
-              <h2 class="card__title">Досвід</h2>
+              <img
+                src="./images/advances/7.png"
+                loading="lazy"
+                class="card__img"
+                alt="іконка молотка з отвірткою"
+              />
+              <h3 class="card__title">Досвід</h3>
               <p class="card__text">
                 Наше підприємство успішно виконується ремонт пральних машин в Києві з 2014 року і за
                 цей час ми збагатилися значним досвідом у цій сфері. Наші фахівці завжди знаходять
@@ -258,8 +296,13 @@
             </li>
 
             <li class="cards__body">
-              <img src="./images/advances/3.png" loading="lazy" class="card__img" alt="" />
-              <h2 class="card__title">Якість</h2>
+              <img
+                src="./images/advances/3.png"
+                loading="lazy"
+                class="card__img"
+                alt="значок якості"
+              />
+              <h3 class="card__title">Якість</h3>
               <p class="card__text">
                 Наша компанія гарантує відмінну якість послуг та індивідуальний підхід до кожного
                 клієнта з професійною увагою до деталей. Ми завжди прагнемо надати послуги на
@@ -268,7 +311,12 @@
             </li>
 
             <li class="cards__body">
-              <img src="./images/advances/1.png" loading="lazy" class="card__img" alt="" />
+              <img
+                src="./images/advances/1.png"
+                loading="lazy"
+                class="card__img"
+                alt="значок гарантії"
+              />
               <h2 class="card__title">Гарантія на 1 рік</h2>
               <p class="card__text">
                 Під час ремонту ми встановлюємо нові запчастини з гарантією, яка діє протягом одного
@@ -279,16 +327,26 @@
             </li>
 
             <li class="cards__body">
-              <img src="./images/advances/2.png" loading="lazy" class="card__img" alt="" />
-              <h2 class="card__title">Ціна</h2>
+              <img
+                src="./images/advances/2.png"
+                loading="lazy"
+                class="card__img"
+                alt="значок бірки з ціною"
+              />
+              <h3 class="card__title">Ціна</h3>
               <p class="card__text">
                 Ми гарантуємо Вам найкращі ціни на ремонт пральних машин у м.Київ.
               </p>
             </li>
 
             <li class="cards__body">
-              <img src="./images/advances/6.png" loading="lazy" class="card__img" alt="" />
-              <h2 class="card__title">Якісні запчастини</h2>
+              <img
+                src="./images/advances/6.png"
+                loading="lazy"
+                class="card__img"
+                alt="значок шестерні"
+              />
+              <h3 class="card__title">Якісні запчастини</h3>
               <p class="card__text">
                 Ми працюємо тільки з провіреними постачальниками запчастин, тому впевнені, що вони
                 слугуватимуть вам дуже довго.
@@ -297,51 +355,6 @@
           </ul>
         </div>
       </section>
-
-      <!-- team -->
-      <!-- <section class="team">
-        <div class="container team__container">
-          <h2 class="team__title title">Наша команда</h2>
-
-          <div class="team__cards grid">
-            <div class="team__body grid-item">
-              <div class="body__img">
-                <img src="./images/team/1.jpg" alt="" />
-              </div>
-
-              <div class="body__content">
-                <h3 class="body__title">Василевський Юрій</h3>
-
-                <p class="body__text">Lorem ipsum dolor sit amet,</p>
-              </div>
-            </div>
-
-            <div class="team__body grid-item">
-              <div class="body__img">
-                <img src="./images/team/1.jpg" alt="" />
-              </div>
-
-              <div class="body__content">
-                <h3 class="body__title">Соколов Дмитро</h3>
-
-                <p class="body__text">Lorem ipsum dolor sit amet,</p>
-              </div>
-            </div>
-
-            <div class="team__body grid-item">
-              <div class="body__img">
-                <img src="./images/team/2.jpg" alt="" />
-              </div>
-
-              <div class="body__content">
-                <h3 class="body__title">Бурковський Дмитро</h3>
-
-                <p class="body__text">Lorem ipsum dolor sit amet,</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <!-- specialization -->
       <section class="specialization">
@@ -356,7 +369,7 @@
                 src="./images/specialization/1.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип LG"
               />
             </li>
 
@@ -365,7 +378,7 @@
                 src="./images/specialization/2.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип indesit"
               />
             </li>
 
@@ -374,7 +387,7 @@
                 src="./images/specialization/3.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип whirpool"
               />
             </li>
 
@@ -383,7 +396,7 @@
                 src="./images/specialization/4.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип zanussi"
               />
             </li>
 
@@ -392,7 +405,7 @@
                 src="./images/specialization/5.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип mile"
               />
             </li>
 
@@ -401,7 +414,7 @@
                 src="./images/specialization/6.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип beko"
               />
             </li>
 
@@ -410,7 +423,7 @@
                 src="./images/specialization/7.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип samsung"
               />
             </li>
 
@@ -419,7 +432,7 @@
                 src="./images/specialization/8.png"
                 loading="lazy"
                 class="specialization__img"
-                alt=""
+                alt="логотип bosch"
               />
             </li>
           </ul>
@@ -441,11 +454,16 @@
                 <li class="faq__item">
                   <div class="faq__box-title">
                     <h3 class="faq__sub-title" data-index="0">Яка гарантія на послуги?</h3>
-
-                    <svg class="icon faq__icon" data-index="0">
-                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
-                    </svg>
+                    <button
+                      class="faq__button"
+                      title="Кнопка для відкриття відповіді на питання"
+                      aria-label="Відкрити відповідь на питання"
+                    >
+                      <svg class="icon faq__icon" data-index="0">
+                        <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                        <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
+                      </svg>
+                    </button>
                   </div>
 
                   <p class="faq__ansver" id="p-0">
@@ -458,11 +476,16 @@
                 <li class="faq__item">
                   <div class="faq__box-title">
                     <h3 class="faq__sub-title" data-index="1">Скільки коштує виклик майстра?</h3>
-
-                    <svg class="icon faq__icon" data-index="1">
-                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
-                    </svg>
+                    <button
+                      class="faq__button"
+                      title="Кнопка для відкриття відповіді на питання"
+                      aria-label="Відкрити відповідь на питання"
+                    >
+                      <svg class="icon faq__icon" data-index="1">
+                        <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                        <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
+                      </svg>
+                    </button>
                   </div>
 
                   <p class="faq__ansver" id="p-1">
@@ -476,11 +499,16 @@
                 <li class="faq__item">
                   <div class="faq__box-title">
                     <h3 class="faq__sub-title" data-index="2">Що таке консультація майстра?</h3>
-
-                    <svg class="icon faq__icon" data-index="2">
-                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
-                    </svg>
+                    <button
+                      class="faq__button"
+                      title="Кнопка для відкриття відповіді на питання"
+                      aria-label="Відкрити відповідь на питання"
+                    >
+                      <svg class="icon faq__icon" data-index="2">
+                        <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                        <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
+                      </svg>
+                    </button>
                   </div>
 
                   <p class="faq__ansver" id="p-2">
@@ -495,11 +523,16 @@
                 <li class="faq__item">
                   <div class="faq__box-title">
                     <h3 class="faq__sub-title" data-index="3">Які способи оплати?</h3>
-
-                    <svg class="icon faq__icon" data-index="3">
-                      <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
-                      <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
-                    </svg>
+                    <button
+                      class="faq__button"
+                      title="Кнопка для відкриття відповіді на питання"
+                      aria-label="Відкрити відповідь на питання"
+                    >
+                      <svg class="icon faq__icon" data-index="3">
+                        <use href="./images/sprite.svg#down" class="faq__icon-down"></use>
+                        <use href="./images/sprite.svg#up" class="faq__icon-up"></use>
+                      </svg>
+                    </button>
                   </div>
 
                   <p class="faq__ansver is-hiden-faq" id="p-3">
@@ -517,7 +550,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <a href="./" class="logo link footer__logo">
-          <img src="./images/1.png" loading="lazy" class="logo-img" alt="логотип" />
+          <img src="./images/1.png" loading="lazy" class="logo-img" alt="логотип washer-servise" />
         </a>
 
         <nav class="footer__menu menu">
@@ -577,7 +610,11 @@
 
             <ul class="social-list list">
               <li class="social-item">
-                <a href="https://www.instagram.com/tech_maysternya/" class="social-link">
+                <a
+                  href="https://www.instagram.com/tech_maysternya/"
+                  class="social-link"
+                  title="Перейти в інстаграм"
+                >
                   <svg class="social-icon">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
