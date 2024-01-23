@@ -61,105 +61,155 @@
   </head>
 
   <body class="body">
-    <!-- header -->
-    <header class="header header-contact">
-      <div class="header__container container">
-        <a href="./" class="logo link">
-          <img src="./images/logo/logo.png" class="logo-img" alt="логотип washer-servise" />
+    <body class="body">
+      <!-- header -->
+      <header class="header">
+        <div class="header__container container">
+          <a href="./" class="logo link">
+            <img src="./images/logo/logo.png" class="logo-img" alt="логотип" />
+          </a>
+  
+          <nav class="header__menu menu">
+            <ul class="header__list list">
+              <li class="header__item item">
+                <a href="./" class="header__link link">Головна</a>
+              </li>
+  
+              <li class="header__item item">
+                <a href="./price.html" class="header__link link">Ціни</a>
+              </li>
+  
+              <li class="header__item item">
+                <a href="./contacts.html" class="header__link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <ul class="contact list">
+            <!-- <li class="contact__item">
+              <a href="tel:0987359299" class="contact__link link">
+                <svg class="icon icon-phone">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                <span class="contact__link-blue">(098)</span> 7359299
+              </a>
+            </li> -->
+  
+            <li class="contact__item">
+              <a href="tel:0938640584" class="contact__link link">
+                <svg class="icon icon-phone">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+  
+                <span class="contact__link-blue">(093)</span> 8640584
+              </a>
+            </li>
+          </ul>
+  
+          <ul class="social__list list">
+            <a href=" link social__link">
+              <li class="social__item">
+                <svg class="icon icon-telegram">
+                  <use href="./images/sprite.svg#telegram"></use>
+                </svg>
+              </li>
+            </a>
+  
+            <a href=" link social__link">
+              <li class="social__item">
+                <svg class="icon icon-viber">
+                  <use href="./images/sprite.svg#viber"></use>
+                </svg>
+              </li>
+            </a>
+  
+            <a href=" link social__link">
+              <li class="social__item">
+                <svg class="icon icon-instagram">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </li>
+            </a>
+          </ul>
+  
+          <div class="icon-box">
+            <button
+              class="header__button"
+              title="Кнопка для відкриття мобільного меню"
+              aria-label="Відкрити мобільне меню"
+              aria-expanded="false"
+            >
+              <svg class="icon icon-menu">
+                <use href="./images/sprite.svg#menu" class="menu-open"></use>
+                <use href="./images/sprite.svg#cross" class="menu-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+  
+      <!-- мобільне меню -->
+      <div class="mobile is-hiden">
+        <a href="./" class="mobile__logo">
+          <img src="./images/logo/logo.png" alt="логотип компанії washer-service" />
         </a>
-
-        <nav class="header__menu menu">
-          <ul class="header__list list">
-            <li class="header__item item">
-              <a href="./index.html" class="header__link link">Головна</a>
+  
+        <nav class="mobile__nav">
+          <ul class="mobile__list list">
+            <li class="mobile__item">
+              <a href="./" class="mobile__link link">Головна </a>
             </li>
-
-            <li class="header__item item">
-              <a href="./price.html" class="header__link link">Ціни</a>
+  
+            <li class="mobile__item">
+              <a href="./price.html" class="mobile__link link">Цiни</a>
             </li>
-
-            <li class="header__item item">
-              <a href="./contacts.html" class="header__link link">Контакти</a>
+  
+            <li class="mobile__item">
+              <a href="./contacts.html" class="mobile__link link">Контакти </a>
             </li>
           </ul>
         </nav>
-
-        <ul class="contact list">
-          <!-- <li class="contact__item">
-            <a href="tel:0987359299" class="contact__link link">
-              <svg class="icon icon-phone">
-                <use href="./images/sprite.svg#phone"></use>
-              </svg>
+  
+        <ul class="mobile__contact contact-mobile list">
+          <!-- <li class="contact-mobile__item">
+            <a href="tel:0987359299" class="contact-mobile__link link">
               <span class="contact__link-blue">(098)</span> 7359299
             </a>
           </li> -->
-
-          <li class="contact__item">
-            <a href="tel:0938640584" class="contact__link link">
-              <svg class="icon icon-phone">
-                <use href="./images/sprite.svg#phone"></use>
-              </svg>
+  
+          <li class="contact-mobile__item">
+            <a href="tel:0938640584" class="contact-mobile__link link">
               <span class="contact__link-blue">(093)</span> 8640584
             </a>
           </li>
         </ul>
-
-        <!-- <div class="header__button">
-          <a href="" class="button link">Залишити заявку</a>
-        </div> -->
-
-        <div class="icon-box">
-          <button
-            class="header__button"
-            title="Кнопка для відкриття мобільного меню"
-            aria-label="Відкрити мобільне меню"
-            aria-expanded="false"
-          >
-            <svg class="icon icon-menu">
-              <use href="./images/sprite.svg#menu" class="menu-open"></use>
-              <use href="./images/sprite.svg#cross" class="menu-close"></use>
-            </svg>
-          </button>
-        </div>
-    </header>
-
-    <!-- мобільне меню -->
-    <div class="mobile is-hiden">
-      <a href="./" class="mobile__logo">
-        <img src="./images/logo/logo.png" alt="логотип washer-servise" />
-      </a>
-
-      <nav class="mobile__nav">
-        <ul class="mobile__list list">
-          <li class="mobile__item">
-            <a href="./" class="mobile__link link"> Головна </a>
-          </li>
-
-          <li class="mobile__item">
-            <a href="./price.html" class="mobile__link link">Цiни</a>
-          </li>
-
-          <li class="mobile__item">
-            <a href="./contacts.html" class="mobile__link link"> Контакти </a>
-          </li>
+  
+        <ul class="mobile-social__list list">
+          <a href=" link mobile-social__link">
+            <li class="mobile-social__item">
+              <svg class="icon icon-telegram">
+                <use href="./images/sprite.svg#telegram"></use>
+              </svg>
+            </li>
+          </a>
+  
+          <a href=" link mobile-social__link">
+            <li class="mobile-social__item">
+              <svg class="icon icon-viber">
+                <use href="./images/sprite.svg#viber"></use>
+              </svg>
+            </li>
+          </a>
+  
+          <a href=" link mobile-social__link">
+            <li class="mobile-social__item">
+              <svg class="icon icon-instagram">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </li>
+          </a>
         </ul>
-      </nav>
-
-      <ul class="mobile__contact contact-mobile list">
-        <!-- <li class="contact-mobile__item">
-          <a href="tel:0987359299" class="contact-mobile__link link">
-            <span class="contact__link-blue">(098)</span> 7359299
-          </a>
-        </li> -->
-
-        <li class="contact-mobile__item">
-          <a href="tel:0938640584" class="contact-mobile__link link">
-            <span class="contact__link-blue">(093)</span> 8640584
-          </a>
-        </li>
-      </ul>
-    </div>
-
+      </div>
     <!-- main -->
     <main class="main">
       <section class="contacts">
@@ -239,7 +289,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <a href="./" class="logo link footer__logo">
-          <img src="./images/1.png" class="logo-img" alt="логотип washer-servise" />
+          <img src="./images/1.png" loading="lazy" class="logo-img" alt="логотип washer-servise" />
         </a>
 
         <nav class="footer__menu menu">
@@ -264,14 +314,14 @@
           <div class="box-footer">
             <ul class="footer__contact contact list">
               <!-- <h3 class="title footer__title">Контакти</h3> -->
-              <!-- <li class="contact__item">
+              <li class="contact__item">
                 <a href="tel:0987359299" class="contact__link link">
                   <svg class="icon icon-phone">
                     <use href="./images/sprite.svg#phone"></use>
                   </svg>
                   <span class="contact__link-blue">(098)</span> 7359299
                 </a>
-              </li> -->
+              </li>
 
               <li class="contact__item">
                 <a href="tel:0938640584" class="contact__link link">
@@ -294,12 +344,16 @@
             </div>
           </div>
 
-          <!-- <div class="footer-social-list">
-            <h3 class="footer__title title">Ми в instagram</h3>
+          <div class="footer-social-list">
+            <h3 class="footer__title title">Ми в соцмережах</h3>
 
             <ul class="social-list list">
               <li class="social-item">
-                <a href="https://www.instagram.com/tech_maysternya/" class="social-link">
+                <a
+                  href="https://www.instagram.com/tech_maysternya/"
+                  class="social-link"
+                  title="Перейти в інстаграм"
+                >
                   <svg class="social-icon">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
@@ -309,14 +363,21 @@
               <li class="social-item">
                 <a href="" class="social-link">
                   <svg class="social-icon">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
+                    <use href="./images/sprite.svg#viber"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#telegram"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-          </div> -->
+          </div>
         </div>
-
         <!-- footer bg -->
         <div class="box">
           <div class="wave -one"></div>
