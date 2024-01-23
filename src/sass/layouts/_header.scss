@@ -73,10 +73,30 @@
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 320px) {
     display: none;
   }
 }
+
+.social__list {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+// .social-link .icon-telegram:hover {
+//   fill: rgb(219, 199, 20);
+// }
 
 .contact__link {
   font-weight: 600;
@@ -89,10 +109,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 380px) {
+    font-size: 14px;
+  }
 }
 
 .header .icon-phone {
   margin-right: 10px;
+
+  @media screen and (max-width: 380px) {
+    display: none;
+  }
 }
 
 .header .contact__item:not(:last-child) {
@@ -147,4 +175,14 @@
   @media screen and (min-width: 1122px) {
     display: none;
   }
+}
+
+
+.mobile-social__list {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-social__item {
+  margin-right: 15px;
 }
